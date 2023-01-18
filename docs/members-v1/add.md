@@ -26,9 +26,9 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | [Member](../definitions/member.md) | Success |
-| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid or the request has bad data. |
-| 409 | | Member already exists and `ignoreExisting` is not set. |
+| 200 OK | [Member](../definitions/member.md) | Success |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid or the request has bad data. |
+| 409 Conflict | | Member already exists and `ignoreExisting` is not set. |
 
 ## Security
 
