@@ -11,13 +11,13 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 | Name | In | Required | Type | Description |
 | - | - | - | - | - |
 | baseUrl | path | Yes | string | The API URL. |
-| customerKey | path | Yes | string | The customer Key or `me`. |
+| customerKey | path | Yes | string | The customer key or `me`. |
 
 ## Request Body
 
 | Name | Type | Required | Description |
 | - | - | - | - |
-| fid | string (format: [Fid](fid.md)) | Yes | FID of the physician. |
+| fid | string (format: [Fid](../definitions/fid.md)) | Yes | FID of the physician. |
 | ignoreExisting | boolean | No | Ignore any existing member with the same FID. |
 
 *Note: Any fields marked as deprecated will be removed in a future version of the API. New code should not rely on these fields. Existing code should be updated to use alternative fields.*
@@ -26,8 +26,8 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | [Member](definitions/member.md) | Success |
-| 400 | [ProblemDetails](definitions/problem-details.md) | FID is invalid or the request has bad data. |
+| 200 | [Member](../definitions/member.md) | Success |
+| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid or the request has bad data. |
 | 409 | | Member already exists and `ignoreExisting` is not set. |
 
 ## Security
@@ -43,7 +43,7 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 #### Sample Request
 
 ```HTTP
-POST {baseUrl}/v1/rosters/me/members
+POST /v1/rosters/me/members
 ```
 
 Request body
