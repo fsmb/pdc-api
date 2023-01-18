@@ -44,7 +44,7 @@ Once a physician is added to a roster then a report is automatically generated f
 
 ## Generating a New Report
 
-To generate a new report for a member use the [Generate New Report](members-v1/generate-report.md) endpoint. The only required data is the FID of the member. The FID must already be a member of the roster.
+To generate a new report for a member use the [Generate Report](members-v1/generate-report.md) endpoint. The only required data is the FID of the member. The FID must already be a member of the roster.
 If a client is ensure whether the FID is already a member or not then call the [Get Member](members-v1/get.md) endpoint with the FID first.
 
 Generating a report can take a while so the client must poll for the member status using the [Get Current Report](members-v1/get-current-report.md) endpoint, or similar.
@@ -55,5 +55,5 @@ Clients should check the `isComplete` or `reportStatus` fields to determine if t
 To get the current report for a member use the [Get Current Report](members-v1/get-current-report.md) endpoint. Check the `isComplete` or `reportStatus` fields to determine if the report has been generated.
 If a report is being generated then clients should poll the API until the report is generated. This can take a few minutes so clients should delay before querying again.
 
-If a report is available the endpoint returns a summary of the report. To get the PDF version of the report use the [Get Current Report PDF](members-v1/get-current-report-pdf.md) endpoint.
+If a report is available the endpoint returns a summary of the report. To get the PDF version of the report use the [Get Current Report PDF](members-v1/get-current-report-pdf.md) endpoint. At this time the PDC data is not available in a structured format.
 
