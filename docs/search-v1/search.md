@@ -11,7 +11,7 @@ POST {baseUrl}/v1/rosters/{customerKey}/search
 | Name | In | Required | Type | Description |
 | - | - | - | - | - |
 | baseUrl | path | Yes | string | The API URL. |
-| customerKey | path | Yes | string | The customer Key or `me`. |
+| customerKey | path | Yes | string | The customer key or `me`. |
 
 ## Request Body
 
@@ -49,7 +49,7 @@ POST {baseUrl}/v1/rosters/{customerKey}/search
 #### Sample Request
 
 ```HTTP
-POST {baseUrl}/v1/rosters/me/search
+POST /v1/rosters/me/search
 ```
 
 Request body
@@ -80,7 +80,7 @@ Status code: 200
 #### Sample Request
 
 ```HTTP
-POST {baseUrl}/v1/rosters/me/search
+POST /v1/rosters/me/search
 ```
 
 Request body
@@ -111,7 +111,7 @@ Status code: 200
 #### Sample Request
 
 ```HTTP
-POST {baseUrl}/v1/rosters/me/search
+POST /v1/rosters/me/search
 ```
 
 Request body
