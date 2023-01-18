@@ -11,6 +11,8 @@ To learn more about FSMB APIs refer to the [Getting Started](https://github.com/
 - [Postman Workspace](https://www.postman.com/crimson-shadow-2749/workspace/public-fsmb/collection/1384052-02136600-b1c0-4c59-be37-8297eb08e185)
 - [OpenAPI Specification](https://services-pdc-demo.fsmb.org/swagger/v1/swagger.json)
 
+Are you migrating from the legacy PDC web service? If so then refer to the [Migrating from the PDC Web service](docs/migration-webservice.md) documentation for information on migrating to the new API.
+
 ## Change Log
 
 | Version | Date | Release Notes |
