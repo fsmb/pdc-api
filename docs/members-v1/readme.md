@@ -1,6 +1,6 @@
 # Members
 
-URL: `/v1/rosters/{customerKey}/members`
+URL: `/v1/rosters/{customerKey}/members` \
 API Version: `1.0`
 
 The members endpoint provides access to members of a roster.
