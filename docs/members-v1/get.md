@@ -11,14 +11,14 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}
 | Name | In | Required | Type | Description |
 | - | - | - | - | - |
 | baseUrl | path | Yes | string | The API URL. |
-| customerKey | path | Yes | string | The customer Key or `me`. |
-| fid | path | Yes | string (format: [FID](definitions/fid.md)) | FID of the member. |
+| customerKey | path | Yes | string | The customer key or `me`. |
+| fid | path | Yes | string (format: [FID](../definitions/fid.md)) | FID of the member. |
 
 ## Responses
 
 | Name | Type | Description |
 | - | - | - |
-| 200 OK | [Member](definitions/member.md) | Success |
+| 200 OK | [Member](../definitions/member.md) | Success |
 | 404 Not Found | | Member not found |
 
 ## Security
@@ -34,7 +34,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}
 #### Sample Request
 
 ```HTTP
-GET {baseUrl}/v1/rosters/me/members/999999915
+GET /v1/rosters/me/members/999999915
 ```
 
 #### Sample Response
@@ -63,7 +63,7 @@ Status code: 200
 #### Sample Request
 
 ```HTTP
-GET {baseUrl}/v1/rosters/me/members/999999907
+GET /v1/rosters/me/members/999999907
 ```
 
 #### Sample Response
