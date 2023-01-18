@@ -18,8 +18,8 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}
 
 | Name | Type | Description |
 | - | - | - |
-| 200 OK | [Member](../definitions/member.md) | Success |
-| 404 Not Found | | Member not found |
+| 200 | [Member](../definitions/member.md) | Success |
+| 404 | | Member not found |
 
 ## Security
 
