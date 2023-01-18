@@ -30,8 +30,6 @@ POST {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports
 
 ## Examples
 
-[Generate a Report](#generate-a-report)
-
 ### Generate a Report
 
 #### Sample Request
