@@ -32,9 +32,9 @@ POST {baseUrl}/v1/rosters/{customerKey}/search
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | [SearchResult](../definitions/search-result.md) | Success |
-| 204 | | No match. |
-| 400 | [ProblemDetails](../definitions/problem-details.md) | Bad request. Ensure that all search data is provided. |
+| 200 OK | [SearchResult](../definitions/search-result.md) | Success |
+| 204 No Content | | No match. |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | Bad request. Ensure that all search data is provided. |
 
 ## Security
 
