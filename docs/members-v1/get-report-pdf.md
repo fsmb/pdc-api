@@ -19,10 +19,10 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/{reportId}/pdf
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | string (format: binary) | Success |
-| 204 | | Report not available. |
-| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
-| 404 | | Report not found. |
+| 200 OK | string (format: binary) | Success |
+| 204 No Content | | Report not available. |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
+| 404 Not Found | | Report not found. |
 
 ## Security
 
