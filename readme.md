@@ -29,5 +29,5 @@ To learn more about FSMB APIs refer to the [Getting Started](https://github.com/
 
 ## Resources
 
-[Members](docs/members-v1/readme.md)
-[Search](docs/search-v1/readme.md)
+- [Members](docs/members-v1/readme.md)
+- [Search](docs/search-v1/readme.md)
