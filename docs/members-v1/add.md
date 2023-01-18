@@ -17,7 +17,7 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 
 | Name | Type | Required | Description |
 | - | - | - | - |
-| fid | string (format: [Fid](../definitions/fid.md)) | Yes | FID of the physician. |
+| fid | string (format: [FID](../definitions/fid.md)) | Yes | FID of the physician. |
 | ignoreExisting | boolean | No | Ignore any existing member with the same FID. |
 
 *Note: Any fields marked as deprecated will be removed in a future version of the API. New code should not rely on these fields. Existing code should be updated to use alternative fields.*
