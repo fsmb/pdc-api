@@ -18,9 +18,9 @@ POST {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | [Member](../definitions/member.md) | Success |
-| 202 | | Request already pending. |
-| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
+| 200 OK | [Member](../definitions/member.md) | Success |
+| 202 Accepted | | Request already pending. |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
 
 ## Security
 
