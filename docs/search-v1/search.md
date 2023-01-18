@@ -36,6 +36,10 @@ POST {baseUrl}/v1/rosters/{customerKey}/search
 | 204 No Content | | No match. |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | Bad request. Ensure that all search data is provided. |
 
+## Remarks
+
+The search uses the same rules as the PDC application. If a match is found then it is returned. A physician is not automatically added to the roster. To add a physician to the roster use the [Add Member](../members-v1/add.md) endpoint.
+
 ## Security
 
 ### Scopes
