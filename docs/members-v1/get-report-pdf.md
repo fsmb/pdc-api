@@ -11,8 +11,8 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/{reportId}/pdf
 | Name | In | Required | Type | Description |
 | - | - | - | - | - |
 | baseUrl | path | Yes | string | The API URL. |
-| customerKey | path | Yes | string | The customer Key or `me`. |
-| fid | path | Yes | string (format: [FID](definitions/fid.md)) | FID of the member. |
+| customerKey | path | Yes | string | The customer key or `me`. |
+| fid | path | Yes | string (format: [FID](../definitions/fid.md)) | FID of the member. |
 | reportId | path | Yes | integer (format: int64) | ID of the report. |
 
 ## Responses
@@ -21,7 +21,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/{reportId}/pdf
 | - | - | - |
 | 200 | string (format: binary) | Success |
 | 204 | | Report not available. |
-| 400 | [ProblemDetails](problem-details.md) | FID is invalid. |
+| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
 | 404 | | Report not found. |
 
 ## Security
@@ -37,7 +37,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/{reportId}/pdf
 #### Sample Request
 
 ```HTTP
-GET {baseUrl}/v1/rosters/me/members/999999915/reports/2447717/pdf
+GET /v1/rosters/me/members/999999915/reports/2447717/pdf
 ```
 
 #### Sample Response
@@ -51,7 +51,7 @@ PDF is provided as response body.
 #### Sample Request
 
 ```HTTP
-GET {baseUrl}/v1/rosters/me/members/999999915/reports/12345/pdf
+GET /v1/rosters/me/members/999999915/reports/12345/pdf
 ```
 
 #### Sample Response
