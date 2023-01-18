@@ -22,6 +22,10 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 
 *Note: Any fields marked as deprecated will be removed in a future version of the API. New code should not rely on these fields. Existing code should be updated to use alternative fields.*
 
+The request contains the FID of the physician to add. If the physician is already a member of the roster then a 409 is returned unless `ignoreExisting` is set to `true`.
+
+After a member is added to the roster then a report is generated for the new member. It is not necessary to generate the report using the API.
+
 ## Responses
 
 | Name | Type | Description |
