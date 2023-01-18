@@ -18,10 +18,10 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/current
 
 | Name | Type | Description |
 | - | - | - |
-| 200 | [MemberReportSummary](../definitions/member-report-summary.md) | Success |
-| 204 | | Report not available. |
-| 400 | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
-| 404 | | Report not found. |
+| 200 OK | [MemberReportSummary](../definitions/member-report-summary.md) | Success |
+| 204 No Content | | Report not available. |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
+| 404 Not Found | | Report not found. |
 
 ## Security
 
