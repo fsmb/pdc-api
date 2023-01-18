@@ -22,10 +22,6 @@ POST {baseUrl}/v1/rosters/{customerKey}/members
 
 *Note: Any fields marked as deprecated will be removed in a future version of the API. New code should not rely on these fields. Existing code should be updated to use alternative fields.*
 
-The request contains the FID of the physician to add. If the physician is already a member of the roster then a 409 is returned unless `ignoreExisting` is set to `true`.
-
-After a member is added to the roster then a report is generated for the new member. It is not necessary to generate the report using the API.
-
 ## Responses
 
 | Name | Type | Description |
@@ -33,6 +29,12 @@ After a member is added to the roster then a report is generated for the new mem
 | 200 OK | [Member](../definitions/member.md) | Success |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid or the request has bad data. |
 | 409 Conflict | | Member already exists and `ignoreExisting` is not set. |
+
+## Remarks
+
+The request contains the FID of the physician to add. If the physician is already a member of the roster then a 409 is returned unless `ignoreExisting` is set to `true`.
+
+After a member is added to the roster then a report is generated for the new member. It is not necessary to generate the report using the API.
 
 ## Security
 
