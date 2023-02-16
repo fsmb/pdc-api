@@ -18,7 +18,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/current/data
 
 | Name | Type | Description |
 | - | - | - |
-| 200 OK | [Report](../definitions/report.md) | Success |
+| 200 OK | [PdcReport](../definitions/report.md) | Success |
 | 204 No Content | | Report not available. |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID is invalid. |
 | 404 Not Found | | Member or report not found. |
