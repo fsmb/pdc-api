@@ -17,6 +17,7 @@ Are you migrating from the legacy PDC web service? If so then refer to the [Migr
 
 | Version | Date | Release Notes |
 | - | - | - |
+| 1.1 | 16 Feb 2023 | Added PDC data |
 | 1.0 | 18 Aug 2022 | Initial version |
 
 ## Security
