@@ -9,6 +9,7 @@ PDC report.
 | asOfDateTimeUtc | string (date-time) | Yes | Date and time the report was generated. |
 | generatedByUser | string | No | User who generated the report. |
 | boardActionStatus | string (len: 20) | Yes | Board action status. One of: `Cleared`, `Alerted` |
+| boardOrders | [BoardOrder](report-boardorder.md)[] | No | Board orders, if any. |
 | names | [Names](report-names.md) | Yes | Names. |
 | birthDate | [BirthDate](report-birthdate.md) | No | Birth date. |
 | medicalEducation | [MedicalEducation](report-medical-education.md) | No | Medical education. |
