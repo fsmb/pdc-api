@@ -13,8 +13,8 @@ The members endpoint provides access to members of a roster.
 | [Generate Report](generate-report.md) | Generate a new report. |
 | [Get Member](get.md) | Get a member. |
 | [Get Current Report](get-current-report.md) | Get the current report. |
-| [Get Current Report Data](get-current-report-data.md) | Get the current report as data. |
+| [Get Current Report Data](get-current-report-data.md) | Get the current report's data. |
 | [Get Current Report PDF](get-current-report-pdf.md) | Get the current report as a PDF. |
 | [Get Report](get-report.md) | Get a specific report. |
-| [Get Report Data](get-report-data.md) | Get a specific report as data. |
+| [Get Report Data](get-report-data.md) | Get a specific report's data. |
 | [Get Report PDF](get-report-pdf.md) | Get a specific report as a PDF. |
