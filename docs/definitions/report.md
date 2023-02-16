@@ -7,11 +7,11 @@ PDC report.
 | fid | string (format: digits, len: 9) | Yes | FID of the physician. |
 | reportId | integer | Yes | Report ID |
 | asOfDateTimeUtc | string (date-time) | Yes | Date and time the report was generated. |
-| generatedByUser | string | Yes | User who generated the report. |
+| generatedByUser | string | No | User who generated the report. |
 | boardActionStatus | string (len: 20) | Yes | Board action status. One of: `Cleared`, `Alerted` |
 | names | [Names](report-names.md) | Yes | Names. |
 | birthDate | [BirthDate](report-birthdate.md) | No | Birth date. |
-| medicalEducation | [MedicalEducation](report-medical-education.md) | Yes | Medical education. |
+| medicalEducation | [MedicalEducation](report-medical-education.md) | No | Medical education. |
 | licenses | [License](report-license.md)[] | No | License information. |
 | npi | [Npi](report-npi.md)[] | No | NPI information. |
 | abms | [Abms](report-abms.md) | No | ABMS information, if available. |
