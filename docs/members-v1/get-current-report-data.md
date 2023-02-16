@@ -1,6 +1,6 @@
 # Get Current Report Data
 
-Gets the current report as data.
+Gets the current report's data.
 
 ```HTTP
 GET {baseUrl}/v1/rosters/{customerKey}/members/{fid}/reports/current/data
