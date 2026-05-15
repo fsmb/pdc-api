@@ -3,7 +3,7 @@
 Get the payment status for a PDC report invoice.
 
 ```HTTP
-GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}
+GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
 ```
 
 ## URI Parameters
@@ -36,7 +36,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}
 #### Sample Request
 
 ```HTTP
-GET /v1/rosters/me/reports/3182769
+GET /v1/rosters/me/reports/3182769/invoice
 ```
 
 #### Sample Response
@@ -54,7 +54,7 @@ Status code: 200
 #### Sample Request
 
 ```HTTP
-GET /v1/rosters/me/reports/3182760
+GET /v1/rosters/me/reports/3182760/invoice
 ```
 
 #### Sample Response
