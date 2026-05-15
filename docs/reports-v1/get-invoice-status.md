@@ -49,7 +49,7 @@ Status code: 200
 }
 ```
 
-### Get a Report With an Invalid Report ID
+### Get Invoice Status With an Incorrect Report ID
 
 #### Sample Request
 
