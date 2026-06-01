@@ -18,7 +18,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
 
 | Name | Type | Description |
 | - | - | - |
-| 200 OK | boolean | Success |
+| 200 OK | [PaymentStatus](../definitions/payment-status.md) | Success |
 | 204 No Content | | Report not available. |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | Report ID is invalid. |
 | 404 Not Found | | Report not found. |
