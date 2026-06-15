@@ -1,9 +1,9 @@
-# Get Invoice Status
+# Get Invoice Status by ID
 
-Get the payment status for a PDC report invoice.
+Gets the invoice status for a report.
 
 ```HTTP
-GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
+GET {baseUrl}/v1/rosters/{customerKey}/reports/{fid}/{reportId}/invoice
 ```
 
 ## URI Parameters
@@ -12,6 +12,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
 | - | - | - | - | - |
 | baseUrl | path | Yes | string | The API URL. |
 | customerKey | path | Yes | string | The customer key or `me`. |
+| fid | path | Yes | string (format: FID) | FID of the physician. |
 | reportId | path | Yes | integer (format: int64) | ID of the report. |
 
 ## Responses
@@ -19,8 +20,8 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
 | Name | Type | Description |
 | - | - | - |
 | 200 OK | [PaymentStatus](../definitions/payment-status.md) | Success |
-| 204 No Content | | Report not available. |
-| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | Report ID is invalid. |
+| 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID or report ID is invalid. |
+| 401 Unauthorized | | |
 | 404 Not Found | | Report not found. |
 
 ## Security
@@ -36,7 +37,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{reportId}/invoice
 #### Sample Request
 
 ```HTTP
-GET /v1/rosters/me/reports/3182769/invoice
+GET /v1/rosters/me/reports/999999915/3182769/invoice
 ```
 
 #### Sample Response
@@ -54,9 +55,9 @@ Status code: 200
 #### Sample Request
 
 ```HTTP
-GET /v1/rosters/me/reports/3182760/invoice
+GET /v1/rosters/me/reports/999999915/3182760/invoice
 ```
 
 #### Sample Response
 
-Status code: 204 (No Content)
+Status code: 404 (Not Found)
