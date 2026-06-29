@@ -1,5 +1,7 @@
 # Search
 
+**DEPRECATED: Use the v2 endpoint instead.** 
+
 Search for a physician.
 
 ```HTTP
