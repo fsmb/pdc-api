@@ -17,7 +17,7 @@ POST {baseUrl}/v2/rosters/{customerKey}/search
 
 | Name | Type | Required | Description |
 | - | - | - | - |
-| name | string (len: 160, minimum: 3 characters ) | Yes | Physician name |
+| name | string (len: 160, minLen: 3) | Yes | Physician name |
 | birthDate | string (date, format: yyyy-mm-dd) | Yes* | Date of birth (One required: BirthDate, Npi, LicenseNumber) |
 | npi | string (format: digits, len: 10) | Yes* | NPI number (One required: BirthDate, Npi, LicenseNumber) |
 | licenseNumber | string (len: 16) | Yes* | License number (One required: BirthDate, Npi, LicenseNumber) |
