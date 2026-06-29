@@ -1,5 +1,7 @@
 # PhysicianSearchResult
 
+Physician search results
+
 | Field | Type | Required | Description |
 | - | - | - | - |
 | fid | string (format: digits, len: 9) | Y | FID of the physician |
@@ -9,3 +11,5 @@
 | medicalSchool | string (len: 100) | N | Medical School name |
 | graduationYear | string (format: digits, len: 4) | N | Graduation year |
 | practitionerType | string (len: 5) | N | Practitioner type |
+
+*Note: Any fields marked as deprecated will be removed in a future version of the API. New code should not rely on these fields. Existing code should be updated to use alternative fields.*
