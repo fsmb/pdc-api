@@ -40,7 +40,7 @@ Clients should pass as much information as possible to improve the changes of fi
 
 | Name | Type | Description |
 | - | - | - |
-| 200 OK | [PagedList](../definitions/paged-list.md)[(PhysicianSearchResult)](definitions/paged-physician-search-result.md) | Success |
+| 200 OK | [PagedList](../definitions/paged-list.md) of [PhysicianSearchResult](definitions/paged-physician-search-result.md) | Success |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | Bad request. Ensure that all search data is provided. |
 
 ## Remarks
