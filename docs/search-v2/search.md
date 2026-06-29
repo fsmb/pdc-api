@@ -83,10 +83,19 @@ Status code: 200
 
 ```json
 {
-    "fid": "999999907",
-    "name": "Alexa Wood Checkey",
-    "graduationYear": "2014",
-    "practitionerType": "MD"
+   "metadata": {
+      "page": 1,
+      "pageSize": 25,
+      "totalItems": 1
+   },
+   "items": [
+   {
+      "fid": "999999907",
+      "name": "Alexa Wood Checkey",
+      "graduationYear": "2014",
+      "practitionerType": "MD"
+   }
+   ]
 }
 ```
 
@@ -115,10 +124,19 @@ Status code: 200
 
 ```json
 {
-    "fid": "999999915",
-    "name": "Philip James Testman",
-    "medicalSchool": "West Virginia University School of Medicine",
-    "practitionerType": "MD"
+   "metadata": {
+      "page": 1,
+      "pageSize": 25,
+      "totalItems": 1
+   },
+   "items": [
+   {
+      "fid": "999999915",
+      "name": "Philip James Testman",
+      "medicalSchool": "West Virginia University School of Medicine",
+      "practitionerType": "MD"
+   }
+   ]
 }
 ```
 
