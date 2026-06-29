@@ -19,11 +19,11 @@ POST {baseUrl}/v2/rosters/{customerKey}/search
 | - | - | - | - |
 | name | string (len: 160, minLen: 3) | Yes | Physician name |
 | birthDate | string (date, format: yyyy-mm-dd) | * | Date of birth (One required: BirthDate, Npi, LicenseNumber) |
-| npi | string (format: digits, len: 10) | * | NPI number (One required: BirthDate, Npi, LicenseNumber) |
+| npi | string (len: 10, format: digits) | * | NPI number (One required: BirthDate, Npi, LicenseNumber) |
 | licenseNumber | string (len: 16) | * | License number (One required: BirthDate, Npi, LicenseNumber) |
 | licenseState | string (len: 25) | No | State of licensure (use the full name such as `Texas`) |
 | medicalSchool | string (len: 100) | No | Medical school name |
-| graduationYear | string (format: digits, len: 4) | No | Graduation year |
+| graduationYear | string (len: 4, format: digits) | No | Graduation year |
 | practitionerType | string (len: 5) | No | Practitioner type (one of: MD, DO, PA) |
 
 Name and at least one of the following fields are required:
