@@ -1,5 +1,7 @@
 # Search
 
+**DEPRECATED: Use the v2 endpoint instead.** 
+
 Search for a physician.
 
 ```HTTP
@@ -17,12 +19,12 @@ POST {baseUrl}/v1/rosters/{customerKey}/search
 
 | Name | Type | Required | Description |
 | - | - | - | - |
-| name | string (len: 100) | Yes | Full name of the physician. |
+| name | string (len: 160) | Yes | Full name of the physician. |
 | birthDate | string (format: date) | Yes | Date of birth. |
 | ssnLastFour | string (format: digits, len: 4) | No | Last four of the SSN. Either `ssnLastFour` or `licenseNumber` is required. |
 | licenseNumber | string (len: 16) | No | License number. Either `ssnLastFour` or `licenseNumber` is required. |
 | graduationYear | string (format: digits, len: 4) | No | Year of graduation. Either `graduationYear` or `medicalSchool` is required. |
-| medicalSchool | string (len: 80) | No | Medical school name. Either `graduationYear` or `medicalSchool` is required. |
+| medicalSchool | string (len: 100) | No | Medical school name. Either `graduationYear` or `medicalSchool` is required. |
 | degree | string (len: 5) | No | Degree code. |
 | npi | string (format: digits, len: 10) | No | NPI number. |
 

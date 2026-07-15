@@ -15,11 +15,11 @@ Are you migrating from the legacy PDC web service? If so then refer to the [Migr
 
 ## Change Log
 
-| Version | Date | Release Notes |
-| - | - | - |
-| 1.2 |  | Added Invoice Status endpoint |
-| 1.1 | 16 Feb 2023 | Added PDC data |
-| 1.0 | 18 Aug 2022 | Initial version |
+| Date | Release Notes |
+| - | - |
+| July 2026  | Added Invoice Status and Search v2 endpoints |
+| 16 Feb 2023 | Added PDC data |
+| 18 Aug 2022 | Initial version |
 
 ## Security
 
@@ -34,5 +34,6 @@ Are you migrating from the legacy PDC web service? If so then refer to the [Migr
 ## Resources
 
 - [Members](docs/members-v1/readme.md)
-- [Search](docs/search-v1/readme.md)
+- [Search v2](docs/search-v2/readme.md)
+- [(DEPRECATED) Search](docs/search-v1/readme.md) 
 - [Reports](docs/reports-v1/readme.md)

@@ -9,4 +9,5 @@ This endpoint provides access to report data.
 
 | Operation | Description |
 | - | - |
-| [Get Invoice Status](get-invoice-status.md) | Get the status for a PDC report invoice. |
+| [Get Current Invoice Status](get-current-invoice-status.md) | Gets the invoice status for the current report, if any. |
+| [Get Report Invoice Status](get-invoice-status.md) | Gets the invoice status for a report. |

@@ -1,9 +1,9 @@
-# Get Invoice Status by ID
+# Get Current Invoice Status
 
-Gets the invoice status for a report.
+Gets the invoice status for the current report, if any.
 
 ```HTTP
-GET {baseUrl}/v1/rosters/{customerKey}/reports/{fid}/{reportId}/invoice
+GET {baseUrl}/v1/rosters/{customerKey}/reports/{fid}/invoice
 ```
 
 ## URI Parameters
@@ -13,13 +13,13 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{fid}/{reportId}/invoice
 | baseUrl | path | Yes | string | The API URL. |
 | customerKey | path | Yes | string | The customer key or `me`. |
 | fid | path | Yes | string (format: FID) | FID of the physician. |
-| reportId | path | Yes | integer (format: int64) | ID of the report. |
 
 ## Responses
 
 | Name | Type | Description |
 | - | - | - |
 | 200 OK | [PaymentStatus](../definitions/payment-status.md) | Success |
+| 204 No Content | | Report not available. Try again later. |
 | 400 Bad Request | [ProblemDetails](../definitions/problem-details.md) | FID or report ID is invalid. |
 | 401 Unauthorized | | |
 | 404 Not Found | | Report not found. |
@@ -37,7 +37,7 @@ GET {baseUrl}/v1/rosters/{customerKey}/reports/{fid}/{reportId}/invoice
 #### Sample Request
 
 ```HTTP
-GET /v1/rosters/me/reports/999999915/3182769/invoice
+GET /v1/rosters/me/reports/999999915/invoice
 ```
 
 #### Sample Response
@@ -49,15 +49,3 @@ Status code: 200
     "isPaid": true
 }
 ```
-
-### Get Invoice Status With an Incorrect Report ID
-
-#### Sample Request
-
-```HTTP
-GET /v1/rosters/me/reports/999999915/3182760/invoice
-```
-
-#### Sample Response
-
-Status code: 404 (Not Found)

@@ -1,5 +1,7 @@
 # Search
 
+**DEPRECATED: Use the v2 endpoint instead.** 
+
 URL: `/v1/rosters/{customerKey}/search` \
 API Version: `1.0`
 
