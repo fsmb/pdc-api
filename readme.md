@@ -8,7 +8,7 @@ To learn more about FSMB APIs refer to the [Getting Started](https://github.com/
   - Demo: `https://services-pdc-demo.fsmb.org`
   - Production: `https://services-pdc.fsmb.org`
 - Authentication URL `{baseUrl}/connect/token`
-- [Postman Workspace](https://www.postman.com/crimson-shadow-2749/workspace/public-fsmb/collection/1384052-02136600-b1c0-4c59-be37-8297eb08e185)
+- [Postman Workspace](https://www.postman.com/crimson-shadow-2749/workspace/public-fsmb/collection/1384052-b6bdb300-274f-49a4-bfc3-007b0b8ce7e7?action=share&creator=1384052&active-environment=1384052-3b1223b5-7521-47cc-89fc-5aea17b8f878)
 - [OpenAPI Specification](https://services-pdc-demo.fsmb.org/swagger/v1/swagger.json)
 
 Are you migrating from the legacy PDC web service? If so then refer to the [Migrating from the PDC Web service](docs/migration-webservice.md) documentation for information on migrating to the new API.
